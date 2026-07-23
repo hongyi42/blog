@@ -2,7 +2,7 @@
 title: "HongYi He"
 ---
 
-I write about markets and quantitative finance, statistics and inference, and macroeconomics — with occasional detours into chess, tennis, and art anatomy.
+I write about things I'm interested in.
 
 ## Writing
 
