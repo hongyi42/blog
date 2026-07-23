@@ -1,20 +1,10 @@
 ---
-title: "My first note"
+title: "Writing in public"
 date: 2026-07-23
-tags:
-  - meta
 ---
 
-# My first note
+Most of my notes have lived in a private vault. Publishing a few of them is a way to think more carefully — writing for someone else forces the loose ideas in my head into something that has to actually hold together.
 
-I'm starting this garden to give my learning a home outside my own head. For a while my notes lived only in a private vault; writing some of them in public is a way to think more clearly, revisit ideas, and keep myself honest.
-
-## Why a garden and not a blog
-
-A traditional blog is chronological and expects finished posts. A garden is a network of notes that grow and link to each other over time. That fits how I actually learn — in fragments that connect later — much better than a stream of dated articles.
-
-## How this works
-
-Everything here is written in [Obsidian](https://obsidian.md) and published with [Quartz](https://quartz.jzhao.xyz). I write a note, drop it in one folder, and it goes live. If it's not in that folder, it stays private.
+This site collects the ones worth keeping: notes on markets and quantitative finance, statistics, and macro, alongside the occasional aside. Some are finished; many will change over time.
 
 More soon.

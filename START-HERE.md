@@ -1,6 +1,6 @@
-# START HERE — Hongyi's Digital Garden
+# START HERE — HongYi He
 
-This repository publishes a public digital garden from a **single folder** of a private
+This repository publishes HongYi He's personal site from a **single folder** of a private
 Obsidian vault. It is built with [Quartz v5](https://quartz.jzhao.xyz) and hosted for free
 on GitHub Pages.
 

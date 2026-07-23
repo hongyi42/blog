@@ -1,8 +1,8 @@
-# Hongyi's Digital Garden
+# HongYi He
 
-A public, growing collection of notes on markets and quantitative finance, statistics and
-inference, macroeconomics, and a rotating cast of side interests — published in the open as a
-learn-in-public [digital garden](https://jzhao.xyz/posts/networked-thought).
+The personal site of HongYi He — notes and writing on markets and quantitative finance,
+statistics and inference, and macroeconomics, with occasional detours into chess, tennis,
+and art anatomy.
 
 - **Live site:** https://hongyi42.github.io/blog
 
