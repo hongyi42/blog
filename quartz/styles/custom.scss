@@ -94,8 +94,9 @@ article {
   a:hover {
     color: var(--tertiary);
   }
+  // Hide the hover anchor-link icon on headings.
   a[role="anchor"] {
-    text-decoration: none;
+    display: none !important;
   }
 
   ul,
