@@ -1,5 +1,24 @@
 @use "./variables.scss" as *;
 
+// --- Site font --------------------------------------------------------
+// Times New Roman (a system serif — no web font is downloaded). To switch
+// fonts, change these two lines AND `theme.typography` in quartz.config.yaml.
+:root {
+  --headerFont: "Times New Roman", Times, serif;
+  --bodyFont: "Times New Roman", Times, serif;
+}
+
+// --- Post subtitle ----------------------------------------------------
+// Add under a post's title with:  <p class="post-subtitle">Your subtitle</p>
+.post-subtitle {
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.45;
+  color: var(--gray);
+  margin: 0 0 2.25rem;
+}
+
 // ===================================================================
 //  Minimal single-column theme — HongYi He
 //  Serif, text-forward, no chrome. Inspired by minimalist essay sites.

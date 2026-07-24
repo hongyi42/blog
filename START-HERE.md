@@ -73,6 +73,15 @@ $$
 
 ---
 
+## Post subtitle
+
+To add a subtitle under a post's title, put this as the first line of the note body
+(raw HTML works fine inside Markdown):
+
+```html
+<p class="post-subtitle">Your subtitle here</p>
+```
+
 ## Preview locally before publishing (optional)
 
 ```bash
@@ -107,6 +116,12 @@ Open http://localhost:8080. The page hot-reloads as you edit files in `content/`
 Edit `quartz.config.yaml`, then rebuild (`npx quartz build --serve --wsPort 3999`) to preview.
 Plugins live in the `plugins:` list, each with `enabled: true/false`. Full reference:
 https://quartz.jzhao.xyz
+
+**Changing the font:** the site uses Times New Roman (a system serif — no web font is
+downloaded). To switch fonts, edit `theme.typography` in `quartz.config.yaml` and the
+`--headerFont`/`--bodyFont` lines at the top of `quartz/styles/custom.scss`. To use a Google
+Font instead of a system one, set `theme.fontOrigin: googleFonts` and re-enable the
+`@quartz-community/quartz-fonts` plugin.
 
 After changing config, commit and push (`git add -A && git commit -m "..." && git push`) to deploy —
 `publish.sh` only stages `content/`, so config changes need a manual commit.
