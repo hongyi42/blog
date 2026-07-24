@@ -38,10 +38,16 @@ Watch a deploy finish with `gh run watch`, or check the repo's **Actions** tab.
 
 ---
 
-## Hiding and deleting notes
+## Drafts and hiding notes
 
-- **Keep a note private even though it's in `Blog`:** add `draft: true` to its frontmatter.
-  The `remove-draft` plugin drops it from the build.
+- **Work on a draft privately:** put the note in **`MyVault/Blog/drafts/`**. That folder is
+  excluded from publishing — draft notes never reach the site *or* the public repo, so they stay
+  entirely on your machine. Move the file up into `MyVault/Blog/` (then run `./publish.sh`) when
+  it's ready to go live.
+
+- **Hide a note that's already in `Blog`:** add `draft: true` to its frontmatter (the
+  `remove-draft` plugin drops it from the build). Unlike the `drafts/` folder, a `draft: true`
+  note is still mirrored into the public repo — it's only hidden from the rendered site.
 
   ```markdown
   ---
@@ -53,6 +59,18 @@ Watch a deploy finish with `gh run watch`, or check the repo's **Actions** tab.
 - **Delete a note from the site:** remove it from `MyVault/Blog` and run `./publish.sh`.
   The mirror uses `rsync --delete`, so deleting locally also removes it from the live site.
 
+## Writing math (LaTeX)
+
+Math renders via KaTeX. Use `$...$` for inline math and `$$...$$` for a display block:
+
+```markdown
+Inline: $e^{i\pi} + 1 = 0$
+
+$$
+\hat{\beta} = (X^\top X)^{-1} X^\top y
+$$
+```
+
 ---
 
 ## Preview locally before publishing (optional)
@@ -60,7 +78,7 @@ Watch a deploy finish with `gh run watch`, or check the repo's **Actions** tab.
 ```bash
 cd ~/GitHub/blog
 # copy the latest notes in without committing:
-rsync -av --delete "$HOME/Library/Mobile Documents/com~apple~CloudDocs/MyVault/Blog/" content/
+rsync -av --delete --exclude 'drafts/' "$HOME/Library/Mobile Documents/com~apple~CloudDocs/MyVault/Blog/" content/
 # serve at http://localhost:8080
 npx quartz build --serve --wsPort 3999
 ```

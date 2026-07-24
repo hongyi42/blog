@@ -11,6 +11,7 @@ configuration:
     - private
     - templates
     - .obsidian
+    - drafts
   theme:
     fontOrigin: googleFonts
     cdnCaching: true

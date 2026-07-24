@@ -41,6 +41,7 @@ rsync -av --delete \
   --exclude '.DS_Store' \
   --exclude '.obsidian/' \
   --exclude '.trash/' \
+  --exclude 'drafts/' \
   "$BLOG_SRC/" "$CONTENT_DIR/"
 
 cd "$PROJECT_DIR"
